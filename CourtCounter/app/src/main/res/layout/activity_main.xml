@@ -1,16 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="16dp"
+    android:background="@drawable/football"
     android:paddingBottom="32dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="American football match"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerInParent="true"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="#ffff0000"
+        android:textSize="30sp" />
 
     <View
         android:layout_width="1dp"
         android:layout_height="match_parent"
+        android:layout_below="@id/score"
         android:layout_centerInParent="true"
         android:background="@android:color/darker_gray" />
 
@@ -18,6 +43,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@id/score"
         android:orientation="horizontal"
         android:paddingTop="16dp">
 
@@ -26,30 +52,30 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
-            tools:context=".MainActivity"
             android:padding="24dp"
-            >
+            tools:context=".MainActivity">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
                 android:gravity="center_horizontal"
                 android:padding="4dp"
-                android:text="Team A"
-                android:textColor="#616161"
+                android:text="England patriot"
+                android:textColor="#ff0000"
                 android:textSize="14sp"
-                android:fontFamily="sans-serif-condensed" />
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/team_a_score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
                 android:gravity="center_horizontal"
                 android:padding="4dp"
                 android:text="0"
-                android:textSize="56sp"
-                android:textColor="@android:color/black"
-                android:fontFamily="sans-serif"/>
+                android:textColor="#ff0000"
+                android:textSize="56sp" />
 
             <Button
                 android:layout_width="match_parent"
@@ -80,31 +106,30 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
-            tools:context=".MainActivity"
             android:padding="24dp"
-            >
+            tools:context=".MainActivity">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
                 android:gravity="center_horizontal"
                 android:padding="4dp"
-                android:text="Team B"
-                android:textColor="#616161"
+                android:text="New York jet"
+                android:textColor="#ff0000"
                 android:textSize="14sp"
-                android:fontFamily="sans-serif-condensed"
-                />
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/team_b_score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
                 android:gravity="center_horizontal"
                 android:padding="4dp"
                 android:text="0"
-                android:textSize="56sp"
-                android:textColor="@android:color/black"
-                android:fontFamily="sans-serif"/>
+                android:textColor="#ff0000"
+                android:textSize="56sp" />
 
             <Button
                 android:layout_width="match_parent"

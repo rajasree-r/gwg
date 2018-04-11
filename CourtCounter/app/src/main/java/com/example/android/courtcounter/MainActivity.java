@@ -2,6 +2,7 @@
 package com.example.android.courtcounter;
 
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -17,6 +18,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         displayForTeamA(0);
+
+        new CountDownTimer(15*60*1000+3, 1000) {
+
+            public void onTick(long millisUntilFinished) {
+                long durationSeconds = millisUntilFinished / 1000;
+                String formattedScore = String.format("%02d : %02d", (durationSeconds % 3600) / 60, (durationSeconds % 60));
+
+                TextView scoreView = findViewById(R.id.score);
+                scoreView.setText(formattedScore);
+               // mTextField.setText("seconds remaining: " + millisUntilFinished / 1000);
+            }
+
+            public void onFinish() {
+               // mTextField.setText("done!");
+            }
+        }.start();
     }
 
     /** testing @Override
