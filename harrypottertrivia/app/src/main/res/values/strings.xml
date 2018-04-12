@@ -1,3 +1,55 @@
 <resources>
     <string name="app_name">harry-potter-trivia</string>
+    <string name="splash_text"> Potterheads, get in here ! \n\n
+Get your brooms out and answer these questions !"</string>
+
+    <string name="question1">Which one is not an ingredient of Polyjuice Potion?</string>
+    <string-array name="choices1">
+        <item>Dragon Liver</item>
+        <item>Boomslang Skin</item>
+        <item>Frog Brain</item>
+        <item>Newt Spleen</item>
+    </string-array>
+
+    <string name="question2">Who was the first to be stunned by Baslisk ?</string>
+    <string-array name="choices2">
+        <item>Ginny Weasley</item>
+        <item>Colin Creevey</item>
+        <item>Mrs.Norris</item>
+        <item>Hermione Granger</item>
+    </string-array>
+
+    <string name="question3">What is Harry’s youngest son’s name ?</string>
+    <string-array name="choices3">
+        <item>Sirius</item>
+        <item>James</item>
+        <item>Remus</item>
+        <item>Albus</item>
+    </string-array>
+
+    <string name="question4">Who destroyed the Horcrux made from Rowena Ravenclaw’s diadem ?</string>
+    <string-array name="choices4">
+        <item>Malfoy</item>
+        <item>Crabbe</item>
+        <item>Goyle</item>
+        <item>Harry</item>
+    </string-array>
+
+    <string name="question5">What does Lavender give Ron for Christmas ?</string>
+    <string-array name="choices5">
+        <item>A new wand</item>
+        <item>Promise ring</item>
+        <item>A sweetheart necklace</item>
+        <item>Her photo</item>
+    </string-array>
+
+    <string-array name="answers">
+        <item>Boomslang Skin</item>
+        <item>Mrs.Norris</item>
+        <item>Albus</item>
+        <item>Crabbe</item>
+        <item>A sweetheart necklace</item>
+    </string-array>
+
+    <string name="result">Your score is %d out of 5</string>
 </resources>

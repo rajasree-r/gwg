@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="@string/splash_text"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/holo_blue_bright"
+        android:fontFamily="sans-serif-black"
+        android:onClick="startGame"
+        android:padding="10dp"
+        android:text="Start Quiz"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
